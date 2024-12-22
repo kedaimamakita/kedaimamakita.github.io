@@ -1,0 +1,379 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------- Bagian Header ----------*/
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+.header img {
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    padding: 8px;
+    transition: border-radius 0.3s ease;
+    transition: filter 1s ease;
+}
+.header.active {
+    background-color: #F2F2F2;
+}
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.header nav ul li {
+    margin: 0 15px;
+}
+.header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background-color: #F2F2F2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease,
+                border-radius 0.3s ease,
+                color 0.3s ease,
+                text-shadow 0.3s ease;
+}
+.header nav ul li a:hover {
+    background-color: #7D317A;
+    color: white;
+    text-shadow: 0 0 5px rgb(51, 51, 51, 0.7);
+}
+.header.active nav ul li a {
+    border-radius: 20px;
+}
+
+#hubungi-kami {
+    transition: background-color 0.5s linear, color 0.5s ease, border-radius 0.5s ease, filter 0 ease;
+}
+#hubungi-kami.active {
+    background-color: #7D317A;
+    color: white;
+    border-radius: 5px;
+    transition: filter 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease, border-radius 0.5s ease, filter 0.3s ease;
+}
+#hubungi-kami.active:hover {
+    filter: drop-shadow(0 0 3px #333);
+}
+
+/*---------- Bagian Hero ----------*/
+.hero {
+    background-image: url('img/Beranda/Makanan1.jpg');
+    width: 100%;
+    height: 664px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-text h1 {
+    text-align: center;
+    font-size: 48px;
+}
+#kedai-mama {
+    font-weight: 400;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin-left: -53%;
+    margin-bottom: -40px;
+}
+#cita-rasa {
+    color: #7D317A;
+    font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+.hero-text p {
+    width: 218px;
+    background-color: #7D317A;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 15px;
+}
+.hero-text a {
+    text-decoration: none;
+    color: white;
+}
+
+/*---------- Bagian section 1 ----------*/
+.section1 {
+    background-color: #F2F2F2;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 646px;
+}
+.pelayanan {
+    margin-bottom: 50px;
+}
+.pelayanan h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+#pelayanan-teks1 {
+    font-size: 64px;
+    font-family: "Kaushan Script", serif;
+    font-weight: 100;
+    color: #682e8e;
+    margin-left: -300px;
+}
+#pelayanan-teks2 {
+    margin-top: -50px;
+    margin-left: 200px;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+}
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.service {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*---------- Bagian section 2 ----------*/
+.section2 {
+    width: 1300px;
+    min-height: 635px;
+    margin: auto;
+}
+.section2-box {
+    position: relative;
+    min-height: 635px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.ulasan {
+    text-align: center;
+}
+.ulasan h2 {
+    line-height: 0.5;
+}
+.ulasan-text1 {
+    font-family: "Kaushan Script", serif;
+    font-size: 64px;
+    color: #7D317A;
+}
+.ulasan-text2 {
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+}
+.testimoni {
+    width: 679px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.testimoni-box {
+    background-color: #7D317A;
+    font-size: 16px;
+    color: white;
+    width: 320px;
+    height: 381px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%; 
+}
+.testimoni-box img{
+    position: relative;
+    top: -75px;
+    border-radius: 50%;
+    margin-bottom: -50px;
+    border: 7px solid white;
+}
+.jarak {
+    position: relative;
+}
+.bold {
+    margin-top: 70px;
+    font-weight: bold;
+}
+#atur-baris {
+    line-height: 0.5;
+}
+
+/*---------- Bagian Section 3 ----------*/
+.section3 {
+    width: 100%;
+    height: 406px;
+    background: #7D317A;
+    color: white; 
+    display: flex;
+    justify-content: center;
+}
+.section3-box {
+    position: relative;
+    width: 1366px;
+    height: 406px;
+}
+.section3-logo-brand {
+    position: absolute;
+    left: 8%;
+    top: 23%;
+}
+.section3-text1 { /* Kedai Mama Kita */
+    position: absolute;
+    left: 8%;
+    right: 61%;
+    top: 43%;
+    font-size: 14px;
+}
+.section3-text2 { /* Lokasi Kami*/
+    position: absolute;
+    left: 54%;
+    top: 18%;
+    font-weight: 800;
+}
+.section3-text3 { /* Jl. Tower*/
+    position: absolute;
+    left: 54%;
+    right: 28.2%;
+    top: 26%;
+    font-weight: 300;
+}
+.section3-text4 { /* Jam Buka */
+    position: absolute;
+    left: 77%;
+    top: 18%;
+    font-weight: 800;
+}
+.section3-text5 { /* Senin sd Sabtu */
+    position: absolute;
+    left: 77%;
+    right: 9%;
+    top: 26%;
+    font-weight: 300;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+.section3-text6 { /* Ikuti Kami */
+    position: absolute;
+    left: 54%;
+    right: 35%;
+    top: 50%;
+    font-weight: 800;
+}
+.section3-text7 { /* IG Kedaimamakita_ */
+    position: absolute;
+    left: 57%;
+    top: 61%;
+    font-weight: 300;
+    cursor: pointer;
+}
+.section3-text8 { /* FB Kedaimamakita_ */
+    position: absolute;
+    left: 71%;
+    top: 61%;
+    font-weight: 300;
+    cursor: pointer;
+}
+.section3-text9 { /* tiktok_mamakita */
+    position: absolute;
+    left: 84.5%;
+    top: 61%;
+    font-weight: 300;
+    cursor: pointer;
+}
+.section3-icon-lokasi {
+    position: absolute;
+    left: 50%;
+    top: 31%;
+}
+.section3-icon-jam {
+    position: absolute;
+    left: 73.68%;
+    top: 31%;
+}
+.section3-icon-instagram {
+    position: absolute;
+    left: 54%;
+    top: 64%;
+    cursor: pointer;
+}
+.section3-icon-facebook {
+    position: absolute;
+    left: 68%;
+    top: 64%;
+    cursor: pointer;
+}
+.section3-icon-tiktok {
+    position: absolute;
+    left: 82%;
+    top: 64%;
+    cursor: pointer;
+}
+
+/*---------- Button Go to Up ----------*/
+#btnUp {
+    background-image: url('img/Main/Icon Up.png');
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation-name: opacity;
+    animation-duration: 1s;
+  }
+/* animasi untuk button up */
+  @keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+/*---------- Footer ----------*/
+footer {
+    background-color: #D9D9D9;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}

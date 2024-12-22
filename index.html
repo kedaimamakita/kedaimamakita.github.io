@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Mama Kita</title>
+    <!-- Link Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Link Animate On Scroll(AOS) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link to External CSS -->
+     <link rel="stylesheet" href="Beranda.css">
+</head>
+<body>
+    <!-- Button untuk gulir keatas -->
+    <button onclick="topFunction()" id="btnUp" title="Go to top"></button>
+    <!-- ---------- Bagian Header ---------- -->
+    <div class="header" id="header">
+        <a href="index.html">
+            <img src="img/Main/Logo Brand.png" alt="Logo Brand Mama Kita">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Hubungi Kami.html" id="hubungi-kami">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ---------- Begian Hero ---------- -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1 id="kedai-mama" data-aos="fade-right" data-aos-duration="2000">Kedai Mama Kita</h1>
+            <h1 id="cita-rasa" data-aos="fade-left" data-aos-duration="2000">"Cita Rasa Tradisi, Selalu Dekat di Hati"</h1>
+            <p data-aos="fade-right" data-aos-duration="2000"><a href="Hubungi Kami.html">Pesan Sekarang!</a></p>  
+        </div>
+    </div>
+    <!-- ---------- Bagian Section 1 ---------- -->
+    <section class="section1">
+        <div class="pelayanan">
+            <h2 id="pelayanan-teks1" data-aos="fade-down">Pelayanan</h2>
+            <h2 id="pelayanan-teks2" data-aos="fade-up">Yang Kami Berikan</h2>
+        </div>
+        
+        <div class="services">
+            <div class="service" data-aos="fade-up" data-aos-offset="200">
+                <img src="img/Beranda/Icon Makan di Tempat.png" alt="Makan di Tempat">
+                <h3>Makan di Tempat</h3>
+                <p>Rasakan suasana hangat sambil menikmati sajian khas kami di kedai yang nyaman</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-offset="200">
+                <img src="img/Beranda/Icon Pesan Antar.png" alt="Pesan Antar">
+                <h3>Pesan Antar</h3>
+                <p>Nikmati masakan rumahan tanpa repot, pesanan anda langsung kami antar ke pintu rumah!</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-offset="200">
+                <img src="img/Beranda/Icon Paket Catering.png" alt="Paket Catering">
+                <h3>Paket Catering</h3>
+                <p>Cocok untuk acara spesial anda, dengan pilihan menu yang  variatif dan harga yang terjangkau</p>
+            </div>
+            <div class="service" data-aos="fade-up" data-aos-offset="200">
+                <img src="img/Beranda/Icon Pelayanan Ramah.png" alt="Pelayanan Ramah">
+                <h3>Pelayanan Ramah</h3>
+                <p>Kami selalu menyambut anda dengan senyuman dan layanan sepenuh hati </p>
+            </div>
+        </div>
+    </section>
+    <!-- ---------- Bagian Section 2 ---------- -->
+    <section class="section2">
+        <div class="section2-box">
+            <div class="ulasan">
+                <h2 class="ulasan-text1" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100">Ulasan Pelanggan</h2>
+                <h2 class="ulasan-text2" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="90">Kepada Pelayanan Kami</h2>
+            </div>
+            <div class="testimoni">
+                <div class="testimoni-box" data-aos="flip-down" data-aos-offset="275" data-aos-duration="1000">
+                    <img src="img/Beranda/Prabowo.jpg" alt="Prabowo Subianto">
+                    <p>“Pelayanan nya sangat ramah, pegawai dan owner sangat melayani kami dengan sepenuh hati”</p> 
+                    <div class="jarak">
+                        <p class="bold" id="atur-baris">Prabowo Subianto</p>
+                        <p id="atur-baris">Pelanggan</p>    
+                    </div>
+                    
+                </div>
+                <div class="testimoni-box" data-aos="flip-down" data-aos-offset="330" data-aos-duration="1000">
+                    <img src="img/Beranda/Gibran.jpg" alt="Gibran Rakabuming Raka">
+                    <p>"Pilihan menunya lengkap dan semuanya enak! Salad buahnya segar, gorengannya renyah. Pasti bakal balik lagi ke sini."</p>
+                    <div class="jarak">
+                        <p class="bold" id="atur-baris">Gibran Rakabuming Raka</p>
+                        <p id="atur-baris">Pelanggan</p>    
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <!-- ---------- Bagian Section 3 ---------- -->
+    <section class="section3">
+        <div class="section3-box">
+            <div class="section3-box1">
+                <img src="img/Main/Logo Brand White.png" alt="Logo Brand White">
+                <p class="section3-text1">Kedai Mama Kita adalah tempat makan yang menyajika cita rasa masakan rumahan yang autentik dan hangat.
+                Kami juga menyediakan layanan catering untuk berbagai acara dengan menu yang dapat disesuaikan sesuai kebutuhan Anda.</p>
+            </div>
+            <div class="section3-box2">
+                <div class="section3-box2-area1">
+                    <p class="section3-text-bold">Lokasi Kami</p>
+                    <p class="section3-text-bold">Jam Buka</p>  
+                </div>
+                <div class="section3-box2-area2">
+                    <img src="img/Beranda/Icon Lokasi.png" alt="Icon Lokasi" class="section3-icon-lokasi">
+                    <p class="section3-text3">Jl. Tower No. 100, Kel. Sukmajaya,
+                    <br>Kec. Sukmajaya, Kota Depok ,
+                    <br>Jawa Barat </p>
+                    <img src="img/Beranda/Icon Jam.png" alt="Icon Jam" class="section3-icon-jam">
+                    <p class="section3-text5">Senin s.d Sabtu |
+                    <br>Pukul 09.00 - 18.00 WIB</p>
+                </div>
+                <div class="section3-box2-area3">
+                    <p class="section3-text-bold">Ikuti Kami di :</p>
+                </div>
+                <div class="section3-box2-area4">
+                    <div class="section3-box2-area4-sosmed">
+                        <img src="img/Beranda/Icon Instagram.png" alt="Icon Instagram">
+                        <p>Kedaimamakita_</p>
+                    </div>
+                    <div class="section3-box2-area4-sosmed">
+                        <img src="img/Beranda/Icon Facebook.png" alt="Icon Facebook">
+                        <p>Kedaimamakita_</p>    
+                    </div>
+                    <div class="section3-box2-area4-sosmed">
+                        <img src="img/Beranda/Icon Tiktok.png" alt="Icon Tiktok">
+                        <p>tiktok_mamakita</p>    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- ---------- Footer ---------- -->
+    <footer>
+        <p>Copyright &copy; 2024 <b>Kedai Mama Kita</b> - All rights reserved.</p>
+    </footer>
+    <!-- script animasi -->
+    <script src="js/script.js"></script>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

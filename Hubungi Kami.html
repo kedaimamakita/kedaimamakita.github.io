@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Mama Kita</title>
+    <!-- Link Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Link Animate On Scroll(AOS) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link to External CSS -->
+     <link rel="stylesheet" href="Hubungi Kami.css">
+</head>
+<body>
+    <!-- Button untuk gulir keatas -->
+    <button onclick="topFunction()" id="btnUp" title="Go to top"></button>
+    <!-- ---------- Bagian Header ---------- -->
+    <div class="header" id="header">
+        <a href="index.html">
+            <img src="img/Main/Logo Brand.png" alt="Logo Brand Mama Kita">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="Tentang Kami.html">Tentang Kami</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="Hubungi Kami.html" id="hubungi-kami">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ---------- Bagian Section 1 ---------- -->
+    <section class="section1">
+        <div class="section1-box">
+            <a href="https://maps.app.goo.gl/7tXKiQjq5Habiy8g6" target="_blank" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="img/Hubungi Kami/Maps.jpg" alt="Maps">
+            </a>
+            <div class="section1-box-form">
+                <h1 data-aos="fade-down" data-aos-duration="1000">Hubungi Kami</h1>
+                <form name="myForm" onsubmit="return validateForm()" data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="">
+                    <input type="text" name="fname" placeholder="Nama">
+                    <input type="email" name="femail" placeholder="E-mail">
+                    <input type="tel" name="ftel" placeholder="No. Telepon" maxlength="13" pattern="[0-9]*">
+                    <textarea name="fpesan" placeholder="Pesan Anda"></textarea>
+                    <input type="submit" value="Kirimkan">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ---------- Footer ---------- -->
+    <footer>
+        <p>Copyright &copy; 2024 <b>Kedai Mama Kita</b> - All rights reserved.</p>
+    </footer>
+    <!-- script animasi -->
+    <script src="js/script.js"></script>
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Link & Script Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
